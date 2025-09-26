@@ -1,0 +1,423 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(5rem, 15rem) repeat(2, 1fr);
+    grid-template-areas:
+        "header header"
+        "conteudo conteudo"
+        "conteudo conteudo"
+        "rodape rodape";
+    background: linear-gradient(135deg,
+            #012677 20%,
+            #003b9f 60%,
+            #00B4FC 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    min-height: 5rem;
+    padding: 1rem 7rem 0;
+    display: flex;
+    position: relative;
+    grid-area: header;
+}
+
+.header .header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__nav .header__logo {
+    font-size: 11rem;
+    display: flex;
+    color: var(--color-accent);
+    align-items: center;
+    transition: 300ms all ease-in-out;
+}
+
+.header__nav .header__logo:hover {
+    transform: translate3d(0.1rem, -10%, 1rem);
+}
+
+.header .header__nav .header__list {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    display: flex;
+    font-size: 3.7rem;
+    color: rgb(255, 255, 255);
+}
+
+.header .header__nav .header__list .header__item {
+    color: #E0E0E0;
+    transition: 300ms all ease-in-out;
+    text-decoration: none;
+    border: solid 0.1rem rgba(1, 38, 119, 0.075);
+    padding: 1rem 0;
+}
+
+.header .header__nav .header__list .header__item:hover {
+    transform: scale(0.95);
+    border-bottom: #fff 0.1rem solid;
+}
+
+.header .header__nav .header__list .header__item .header__link {
+    color: #E0E0E0;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.conteudo .secao-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.712);
+    margin: 5rem 0 17rem;
+    padding: 0 3rem;
+}
+
+.conteudo .secao-principal .sobre-pricipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+}
+
+.conteudo .secao-principal .titulo-principal {
+    font-size: 3.5rem;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    color: rgba(255, 255, 255, 0.915);
+    font-weight: 700;
+
+}
+
+.conteudo .secao-principal .titulo-principal .titulo-destacado {
+    font-size: 3.5rem;
+    color: #00B4FC;
+    font-weight: 700;
+}
+
+.conteudo .titulo-padrao {
+    font-size: 2.5rem;
+    color: #FAFAFA;
+    font-weight: 700;
+}
+
+.conteudo .texto-padrao {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 1em;
+    color: #E0E0E0;
+}
+
+.conteudo .secao-principal .sobre-pricipal .sobre-botoes {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2rem;
+}
+
+.conteudo .secao-principal .sobre-pricipal .sobre-botoes .botao {
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    transition: 0.2s ease;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.conteudo .secao-principal .sobre-pricipal .sobre-botoes .botao:hover {
+    background-color: #008CE0;
+    transform: scale(0.95);
+}
+
+.conteudo .secao-principal .perfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.conteudo .secao-principal .perfil .link-perfil {
+    background: url("../image/perfil-test.jpg") top/cover no-repeat padding-box;
+    border: solid 0.3rem rgba(0, 180, 252, 0.2);
+    width: 29rem;
+    height: 29rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 1.5rem 1rem 2rem rgba(1, 38, 119, 0.15);
+    transition: all 0.5s ease-out
+}
+
+.conteudo .secao-principal .perfil .link-perfil:hover {
+    transform: scale(1.05);
+}
+
+.conteudo .secao-sobre {
+    background-color: var(--color-text-main);
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo .secao-sobre .bloco-sobre {
+    margin: 0 auto;
+    text-align: center;
+    margin: 7rem 0 11rem;
+    width: 50%;
+}
+
+.conteudo .secao-sobre .titulo-padrao {
+    font-size: 3rem;
+    color: var(--color-bg);
+}
+
+.conteudo .secao-sobre .texto-padrao {
+    margin-top: 5rem;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.conteudo .secao-conhecimentos {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos {
+    margin: 0 auto;
+    text-align: center;
+    margin: 7rem 0 11rem;
+    width: 50%;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .titulo-padrao {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem li a {
+    font-size: 11rem;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-html a {
+    color: rgb(255, 69, 0);
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-css a {
+    color: rgb(59, 242, 255);
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-js a {
+    color: yellow;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git-hub a {
+    color: rgb(5, 5, 5);
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git a {
+    color: rgb(228, 66, 3);
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-html a i,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-css a i,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-js a i,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git-hub a i,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git a i {
+    transition: 300ms all ease-in-out;
+    padding-bottom: 0.5rem;
+}
+
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-html a i:hover,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-css a i:hover,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-js a i:hover,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git-hub a i:hover,
+.conteudo .secao-conhecimentos .bloco-conhecimentos .list-linguagem .icon-git a i:hover {
+    transform: scale(1.05);
+    border-bottom: #fff 0.1rem solid;
+}
+
+.conteudo .secao-projetos {
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem;
+    background: var(--color-text-main);
+    text-align: center;
+}
+
+.conteudo .secao-projetos h2 {
+    margin-bottom: 5rem;
+    color: #ffffff;
+}
+
+.conteudo .secao-projetos .grid-projetos {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.conteudo .secao-projetos .grid-projetos .card-projeto {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 40rem;
+}
+
+.conteudo .secao-projetos .grid-projetos .card-projeto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo .secao-projetos .grid-projetos .card-projeto img {
+    width: 40rem;
+    height: 21rem;
+    border-bottom: #70707036 0.1rem solid;
+}
+
+.conteudo .secao-projetos .grid-projetos .card-projeto h3 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.conteudo .secao-projetos .grid-projetos .card-projeto p {
+    margin: 0 2rem 1rem;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.rodape {
+    grid-area: rodape;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape .contatos {
+    text-align: center;
+}
+
+.rodape .contatos h2 {
+    margin-bottom: 7rem;
+}
+
+.rodape .contatos .lista-sociais {
+    display: flex;
+    gap: 5rem;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s all ease-in-out;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.rodape .contatos .lista-sociais .icons-sociais:hover {
+    transform: translateY(-4px);
+    color: #008CE0;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais a i {
+    font-size: 9rem;
+    margin-bottom: 1rem;
+}
+
+
+.rodape .contatos .lista-sociais .icons-sociais a .fa-envelope {
+    color: #f7f7f7;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais a .fa-whatsapp {
+    color: #00d111;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais a .fa-linkedin {
+    color: #0099ff;
+}
+
+.rodape .contatos .lista-sociais .icons-sociais a .fa-github {
+    color: #000000;
+}
+
+
+.titulo-padrao {
+    font-size: 3rem;
+    color: var(--color-bg);
+}
+
+:root {
+    /* Cores principais */
+    --color-primary: #012677;
+    --color-accent: #00B4FC;
+
+    /* Neutros */
+    --color-bg: #FAFAFA;
+    --color-text-main: #333333;
+    --color-text-light: #E0E0E0;
+
+    /* Feedback */
+    --color-success: #28A745;
+    --color-error: #FF6B6B;
+}
