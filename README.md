@@ -14,25 +14,24 @@ O objetivo deste projeto é mostrar as tecnologias que tenho conhecimento, além
 
 ## Tecnologias Utilizadas
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 
-Futuramente nas proximas atualizações vou implementar tudo utilizando o [Vite](https://vite.dev/).
+Futuramente nas proximas atualizações em um projeto diferente vou implementar tudo utilizando o [Vite](https://vite.dev/).
 
 - JavaScript
-- TypeScript
 - React
 
-## Tranquilo ? 🤯
+## Tranquilo ?
 
 Se quiser experimentar este mini-projeto fique a vontade, pois dentro do site que o github disponibiliza da para baixar ou até mesmo clonar o projeto. Eu sempre deixo projetos públicos livres para aprimorarem.
 
-## 🧠 Aprendizados / Detalhes
+## Aprendizados / Detalhes
 
 Como foi foi escrito acima este projeto é simples, muito bom até mesmo para mostrar um pouco do que sabe sobre front end e seus fundamentos. Além disso vai ter um atualização mais moderna deste projeto.
 Mas o que posso dizer deste projeto e que foi uma pratica de fundamentos e demostrativo do meu portifólio.
 
-## 📬 Contato
+## Contato
 
 Eu gosto muito de ouvir e ler opiniões que me ajudam a aprender e evoluir, então se você estiver algo para falar sobre os meus projetos, me envie mensagem por um desses links :
 
