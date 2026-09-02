@@ -6,7 +6,7 @@ Meu portifolio
 
 ### Opa Tudo Bem?
 
-Eu sou Arthur desenvolvedor Frontend meu [Currículo](https://drive.google.com/file/d/1DMee-tcR2M0huWUorfRSPmy2G5Rie5lZ/view?usp=sharing) está livre para olharem e caso tenham interesse, entre em contato na seção de 📬 Contato, lá está tudo o que precisa para conversar comigo.
+Eu sou Arthur desenvolvedor Frontend meu [Currículo](https://drive.google.com/file/d/1ZnBIjp304RlGJAszcJ-Zf0Q-n2lXOJvN/view) está livre para olharem e caso tenham interesse, entre em contato na seção de Contato, lá está tudo o que precisa para conversar comigo.
 
 ## Sobre o Projeto
 
@@ -16,10 +16,10 @@ O objetivo deste projeto é mostrar as tecnologias que tenho conhecimento, além
 
 - HTML5
 - CSS3
+- JavaScript ES6
 
 Futuramente nas proximas atualizações em um projeto diferente vou implementar tudo utilizando o [Vite](https://vite.dev/).
 
-- JavaScript
 - React
 
 ## Tranquilo ?

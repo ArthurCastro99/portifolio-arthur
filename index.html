@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/globals.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="shortcut icon" href="./src/image/icon/crown-solid-full.svg" />
+    <link rel="shortcut icon" href="./src/image/icon/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,69 +17,57 @@
     <title>Portifólio | Arthur</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
+    <header>
+      <div>
         <a href="/" aria-label="Página inicial">
-          <i class="fa-solid fa-crown" aria-hidden="true"></i>
+          <img src="./src/image/icon/logo.png" alt="Imagem do logo" />
           <span class="sr-only">Arthur</span>
         </a>
-
-        <nav class="header-nav" aria-label="Menu principal">
-          <input type="checkbox" id="menu-hamburguer" />
-
-          <label for="menu-hamburguer">
-            <div class="menu">
-              <span class="hamburguer"></span>
-            </div>
-          </label>
-
-          <ul class="nav-list">
-            <li class="list-link">
-              <a href="#sobre" class="link">Sobre</a>
-            </li>
-            <li class="list-link">
-              <a href="#conhecimentos" class="link">Conhecimentos</a>
-            </li>
-            <li class="list-link">
-              <a href="#projetos" class="link">Projetos</a>
-            </li>
-            <li class="list-link">
-              <a href="#contato" class="link">Contato</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+
+      <nav>
+        <input type="checkbox" id="menu" />
+
+        <label for="menu">
+          <div>
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+
+        <ul class="nav-list">
+          <li>
+            <a class="link-hamburguer" href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a class="link-hamburguer" href="#conhecimentos">Conhecimentos</a>
+          </li>
+          <li>
+            <a class="link-hamburguer" href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a class="link-hamburguer" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="main">
-      <section class="main-secao-info">
-        <div class="info-perfil">
-          <a
-            class="perfil-link"
-            target="_blank"
-            href="https://github.com/ArthurCastro99"
-          >
-          </a>
-        </div>
-        <div class="secao-info">
-          <h1 class="info-titulo">
-            Tranquilo?
-            <span class="titulo-destaque">Prazer eu sou o Arthur</span>
-          </h1>
+    <main>
+      <section class="apresentacao">
+        <div>
+          <div class="titulos">
+            <h2 class="tituloApresentacao">Olá, prazer eu sou</h2>
+            <h1 class="tituloDestaque">Arthur Castro</h1>
+            <h2 class="tituloPadrao">Desenvolvedor</h2>
+            <span class="tituloPadrao">Front-end</span>
+            <p class="textoPadrao">Criando intefaces modernas e responsivas.</p>
+          </div>
 
-          <h2 class="padrao-titulo">Desenvolvedor Front-end</h2>
-          <p class="padrao-texto">
-            Eu sou apaixonado por tecnologia e sempre busco aprender mais. Este
-            é um portifólio para demonstrar minhas habilidades em HTML, CSS e
-            JavaScript. Sinta-se à vontade para explorar e conhecer um pouco
-            mais sobre mim!
-          </p>
-          <div class="info-botoes">
+          <div class="botoes">
             <a
               class="botao"
               target="_blank"
               href="https://github.com/ArthurCastro99"
-              >Projetos</a
+              >GitHub</a
             >
             <a
               class="botao"
@@ -90,65 +78,56 @@
           </div>
         </div>
       </section>
-      <section class="main-secao-sobre" id="sobre">
+      <section class="sobre animar" id="sobre">
+        <h2 class="tituloPadrao">Sobre mim</h2>
         <div class="secao-sobre">
-          <h2 class="padrao-titulo">Sobre</h2>
-          <p class="padrao-texto">
+          <div>
+            <a
+              class="perfil-link"
+              target="_blank"
+              href="https://github.com/ArthurCastro99"
+            >
+            </a>
+          </div>
+          <p class="textoPadrao">
             Sou um desenvolvedor front-end com experiência em projetos com HTML,
             CSS, JavaScript e React. Estou sempre buscando aprender novas
             tecnologias e aprimorar minhas habilidades. Pois acredito que a
-            tecnologia pode transformar o mundo e estou animado para fazer parte
-            dessa transformação. Atualmente tenho 23 anos e tenho como um dos
-            meus objetivos, entrar na área de Desenvolvedor front-end. Apos
-            engajar nesta área de tecnologia estou a caminho de aprender
-            back-end e consequentemente me tornar full stack. Sempre tive a
-            curiosidade de entrar no ramo de programação e tenho certeza que me
-            tornarei o melhor no que faço, pois sou miticuloso e como
-            consequencia os meus projetos são pensados nos minimos detalhes.
+            tecnologia pode transformar o mundo e eu quero fazer parte dessa
+            transformação. Atualmente tenho 23 anos, desenvolvedor em formação,
+            apaixonado por tecnologia, focado em JavaScript e iniciando estudos
+            em Back-end com Node.js. Sempre tive a curiosidade de entrar no ramo
+            de programação e tenho certeza que me tornarei o melhor no que faço,
+            pois sou miticuloso e esforçado e como consequencia os meus projetos
+            são pensados nos mínimos detalhes.
           </p>
         </div>
       </section>
-      <section class="main-secao-conhecimentos" id="conhecimentos">
-        <div class="secao-conhecimentos">
-          <h2 class="padrao-titulo">Conhecimentos</h2>
-          <ul class="conhecimentos-list">
+      <section class="conhecimentos animar" id="conhecimentos">
+        <h2 class="tituloPadrao">Conhecimentos</h2>
+
+        <div>
+          <ul>
             <li class="icon-html">
-              <a href="http://github.com/ArthurCastro99" target="_blank"
-                ><i class="fa-brands fa-html5"></i
-              ></a>
+              <i class="fa-brands fa-html5"></i>
             </li>
-            <li class="icon-css">
-              <a href="http://github.com/ArthurCastro99" target="_blank"
-                ><i class="fa-brands fa-css3-alt"></i
-              ></a>
-            </li>
-            <li class="icon-js">
-              <a href="http://github.com/ArthurCastro99" target="_blank"
-                ><i class="fa-brands fa-js"></i
-              ></a>
-            </li>
-            <li class="icon-git-hub">
-              <a href="http://github.com/ArthurCastro99" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
+            <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+            <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+            <li class="icon-git-hub"><i class="fa-brands fa-github"></i></li>
             <li class="icon-git">
-              <a href="http://github.com/ArthurCastro99" target="_blank">
-                <i class="fa-brands fa-git-alt"></i
-              ></a>
+              <i class="fa-brands fa-git-alt"></i>
             </li>
-            <li class="icon-css">
-              <a href="http://github.com/ArthurCastro99" target="_blank">
-                <i class="fa-brands fa-react"></i
-              ></a>
+            <li class="icon-react">
+              <i class="fa-brands fa-react"></i>
             </li>
           </ul>
         </div>
       </section>
-      <section class="main-secao-projetos" id="projetos">
-        <h2 class="padrao-titulo">Projetos</h2>
-        <div class="secao-projetos">
-          <article class="projeto-card">
+
+      <section class="projetos animar" id="projetos">
+        <h2 class="tituloPadrao">Destaques</h2>
+        <div class="containerCard">
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/calculadora/"
               target="_blank"
@@ -158,37 +137,72 @@
                 alt="Imagem da calculadora"
               />
             </a>
-            <h3>Calculadora</h3>
-            <p>
-              A calculadora foi feita com javascript puro... manipulação de DOM,
-              includes, lastIndexOf e pecorredor de arrays.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Calculadora JavaScript</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Calculadora simples desenvolvida com HTML, CSS e JavaScript.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/calculadora"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/calculadora/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
             <a href="https://arthurcastro99.github.io/pokedex/" target="_blank">
               <img
                 src="src/image/image-projetos/pokedex.png"
                 alt="Imagem do pokedex"
               />
             </a>
-            <h3>Pokédex</h3>
-            <p>
-              O projeto pokedex tem filtragem por tipo, tema claro ou escuro,
-              página com detalhes pokemons.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-              <li class="icon-react"><i class="fa-brands fa-react"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Pokédex</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+                <li class="icon-react"><i class="fa-brands fa-react"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto pokedex utilizando API do pokeapi.co, desenvolvido com
+                HTML, CSS, JavaScript e React.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/pokedex"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/pokedex/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/crownfolio/"
               target="_blank"
@@ -198,40 +212,81 @@
                 alt="Imagem do crownfolio"
               />
             </a>
-            <h3>Crownfolio</h3>
-            <p>
-              O crownfolio e um projeto de restaurante e delivery. Com seção de
-              promoções e um carrinho de compras.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-              <li class="icon-react"><i class="fa-brands fa-react"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Crownfolio</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+                <li class="icon-react"><i class="fa-brands fa-react"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto de um restaurante e delivery desenvolvido com HTML, CSS,
+                JavaScript e React.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/crownfolio"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/crownfolio/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projetos --->
+
+        <h2 class="tituloPadrao">Projetos</h2>
+        <div class="containerCard">
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/projeto-github-api/"
               target="_blank"
             >
-              <img
-                src="src/image/image-projetos/git-api.png"
-                alt="Imagem do Testimonials Grid Section"
-              />
+              <div>
+                <img
+                  src="src/image/image-projetos/git-api.png"
+                  alt="Imagem do Testimonials Grid Section"
+                />
+              </div>
             </a>
-            <h3>Git Api</h3>
-            <p>
-              Projeto que busca usuarios pelo nome de usuario dentro do github
-              pela API do mesmo.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Git Api</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto desenvolvido com HTML, CSS, JavaScript e React.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/github-api"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/projeto-github-api/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/pj-galeria-js/"
               target="_blank"
@@ -241,18 +296,33 @@
                 alt="Imagem do Testimonials Grid Section"
               />
             </a>
-            <h3>Galeria JS</h3>
-            <p>
-              Galeria que busca nomes dentro da API, além de ter varias outras
-              opções para melhoara ou ajudar na pesquisa.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Galeria JS</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto desenvolvido com HTML, CSS e JavaScript.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/galeria-js"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/pj-galeria-js/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/conselho-auto/"
               target="_blank"
@@ -262,18 +332,33 @@
                 alt="Imagem do Testimonials Grid Section"
               />
             </a>
-            <h3>Conselho Automatico</h3>
-            <p>
-              Gerador de conselhos automatico utilizando API para atualizar as
-              mensagens que sao aleatórias.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-              <li class="icon-js"><i class="fa-brands fa-js"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Conselho Automatico</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="icon-js"><i class="fa-brands fa-js"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto desenvolvido com HTML, CSS e JavaScript puro.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/conselho-auto"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/conselho-auto/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/testimonials-grid-section/"
               target="_blank"
@@ -283,17 +368,33 @@
                 alt="Imagem do Testimonials Grid Section"
               />
             </a>
-            <h3>Testimonials Grid Section</h3>
-            <p>
-              O Testimonials Grid Section tem como objetivo testar conhecimentos
-              no front end mentor.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
+
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Testimonials Grid Section</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto desenvolvido com HTML e CSS puro.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/testimonials-grid-section"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/testimonials-grid-section/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <a
               href="https://arthurcastro99.github.io/four-card-feature-section/"
               target="_blank"
@@ -303,96 +404,75 @@
                 alt="Imagem do Testimonials Grid Section"
               />
             </a>
-            <h3>Card Feature</h3>
-            <p>
-              O Card Feature tem como objetivo testar conhecimentos no front end
-              mentor.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-            </ul>
-          </article>
-          <article class="projeto-card">
-            <a
-              href="https://arthurcastro99.github.io/Product-preview-card/"
-              target="_blank"
-            >
-              <img
-                src="src/image/image-projetos/product-preview.png"
-                alt="Imagem do Testimonials Grid Section"
-              />
-            </a>
-            <h3>Product Preview</h3>
-            <p>
-              O Product Preview tem como objetivo testar conhecimentos no front
-              end mentor.
-            </p>
-            <ul>
-              <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
-              <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
-            </ul>
-          </article>
+            <div class="descricao">
+              <h3 class="subtituloPadrao">Card Feature</h3>
+              <ul class="tecnologias">
+                <li class="icon-html"><i class="fa-brands fa-html5"></i></li>
+                <li class="icon-css"><i class="fa-brands fa-css3-alt"></i></li>
+              </ul>
+              <p class="textoPadrao">
+                Projeto desenvolvido com HTML e CSS puro.
+              </p>
+
+              <div class="botoes">
+                <a
+                  href="https://github.com/ArthurCastro99/four-card-feature-section"
+                  target="_blank"
+                  >GitHub</a
+                >
+
+                <a
+                  href="https://arthurcastro99.github.io/four-card-feature-section/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-contatos" id="contato">
-        <h2 class="padrao-titulo">Contatos</h2>
-        <section class="contatos-list">
-          <div class="icons-sociais">
-            <a href="https://github.com/ArthurCastro99" target="_blank"
-              ><i class="fa-solid fa-envelope"></i>
-              <p>
-                E-mail
-                <br />
-                arthurcastro092012<br />@gmail.com
-              </p>
-            </a>
-          </div>
-          <div class="icons-sociais">
-            <a href="https://www.instagram.com/arthurcastro_99/" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i>
-              <p>
-                Telefone
-                <br />
-                (91) 99826-5505
-              </p>
-            </a>
-          </div>
+    <footer id="contato" class="animar">
+      <h2 class="tituloPadrao">Contatos</h2>
 
-          <div class="icons-sociais">
-            <a
-              href="https://www.linkedin.com/in/arthur-castro-b70a02223/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i>
-              <p>
-                Linkedin
-                <br />
-                @arthurcastro
-              </p>
-            </a>
-          </div>
+      <div class="contato-social">
+        <div class="redes-sociais">
+          <a href="https://wa.me/5591998265505" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
 
-          <div class="icons-sociais">
-            <a href="https://github.com/ArthurCastro99" target="_blank"
-              ><i class="fa-brands fa-github"></i>
-              <p>
-                GitHub
-                <br />
-                @arthurcastro
-              </p>
-            </a>
-          </div>
-        </section>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/arthurcastro_99/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="redes-sociais">
+          <a
+            href="https://www.linkedin.com/in/arthur-castro-b70a02223/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="redes-sociais">
+          <a href="https://github.com/ArthurCastro99" target="_blank"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
-      <div class="footer-direitos">
-        <p class="padrao-texto">
-          © 2025 - Todos os direitos reservados -
-          <a href="https://github.com/ArthurCastro99" target="_blank">Arthur</a>
+
+      <div class="direitos">
+        <p class="textoPadrao">
+          <a href="https://github.com/ArthurCastro99" target="_blank">
+            © 2026 Arthur Castro</a
+          >
         </p>
       </div>
     </footer>
+
+    <script src="src/js/index.js"></script>
   </body>
 </html>

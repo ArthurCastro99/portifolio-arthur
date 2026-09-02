@@ -1,31 +1,28 @@
 :root {
   /* Cores principais */
-  --color-primary: #012677;
-  --color-accent: #00f4fc;
-  --color-bg: #1b1b1b;
-  --color-card: #535353;
+  --fundo-principal: #0b1120;
+  --fundo-secundario: #111827;
+  --cor-principal: #1f3266;
+  --cor-secundario: #45c46a;
 
-  /* Neutros */
-  --color-text: #fafafa;
-  --color-text-main: #cacaca;
-  --color-text-title: #e0e0e0;
-  --color-text-subtitle: #f4f6f8;
-  --color-text-links: #ffffffe7;
-  --color-text-link-light: #000000;
+  /* Textos */
+  --cor-texto-principal: #e5e7eb;
+  --cor-texto-secundario: #94a3b8;
 
-  /* Feedback */
-  --color-success: #28a745;
-  --color-error: #ff6b6b;
-  --color-alert: #ffc107;
+  /* Cards */
+  --cor-card-bg: #172033;
 
-  /* Novas cores */
-  --color-secondary: #f5a623;
-  /* Laranja para contraste */
-  --color-highlight: #ffda0a;
-  /* Amarelo para chamar atenção */
-  /* Cinza claro para fundo */
-  --color-dark: #1a1a1a69;
-  /* Preto suave para seções escuras */
-  --color-info: #17a2b8;
-  /* Azul turquesa para mensagens informativas */
+  /* Bordas */
+  --cor-borda: #26344f;
+
+  /* Hovers*/
+  --cor-box-shadow-hover: rgba(69, 196, 106, 0.15);
+
+  /* Botões */
+  --cor-botao-hover: #55d67a;
+  --cor-botao-secundario-bg: transparent;
+
+  /* Gradientes */
+  --cor-gradiente-principal: #0b0f19;
+  --cor-gradiente-secundario: #111827;
 }
