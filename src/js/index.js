@@ -17,7 +17,7 @@ let observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.20 },
+  { threshold: 0.15 },
 );
 animacao.forEach((element) => {
   observer.observe(element);
